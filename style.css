@@ -1,0 +1,52 @@
+body {
+    background: #000000;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(60, 9, 108, 1) 50%, rgba(123, 44, 191, 1) 100%);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+nav button {
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    color: white;
+    background-color: #FF9100;
+}
+
+nav button:hover {
+    color: black;
+    background-color: #FF6D00;
+}
+
+#title {
+    font-family: "Rubik Doodle Shadow", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    color: #FF6D00;
+    text-align: center;
+}
+
+.fotos {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.fotos img {
+    width: auto;
+    height: 165px;
+    border-radius: 15px;
+}
+
+.fotos img:hover {
+    opacity: 0.4;
+}
