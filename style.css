@@ -5,7 +5,6 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
 body{
     scroll-behavior: smooth;
    background: #000000;
@@ -38,38 +37,6 @@ h2{
     font-family: "Rubik Doodle Shadow", system-ui;
     color: #FF6D00;
 }
-/* armazenado por enquanto
-nav ul{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    gap: 100px;
-}
-nav ul li a{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    cursor: default;
-    position: relative;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 5px;
-    display: inline-block;
-
-}
-nav ul li a:hover{
-     color: rgb(255, 255, 255);
-     transition: 0.5s;
-     font-weight: bold;
-     border-radius: 10px;
-    cursor: default;
-    border: 1.5px solid rgb(255, 145, 0);
-    
-    padding: 5px;
-
-    
-}
-    */
 
 section{
     margin-left: 100px;
@@ -142,8 +109,6 @@ section{
     cursor: default;
     border: 1.9px solid #3C096C;
     padding: 5px;
-
-    
 }
 
 .linkm::after{
@@ -175,28 +140,16 @@ linkm:hover::after{
     border-radius: 10px;
 }
 
-/*
-.p1 {
-    font-size: 22px;
-    text-align: justify;
-    margin: 20px 300px;
-    float: left;
-    padding: 1px;
-    font-family: 'Michroma', sans-serif;
+footer {
+    background: #FF7900;
+    border-radius: 20px;
+    height: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-size: 16px;
+    color: #240046;
 }
- 
-.imagem-direita {
-    float: right;
 
-
-    margin: 20px 40px 20px 100px;
+ion-icon {
+  font-size: 16px;
 }
-.imagem-direita h2 {
-    color: rgb(32, 31, 31);
-    font-size: 22px;
-    text-align: justify;
-    margin: 20px 80px 20px 200px;
-    float: left;
-    font-family: 'Michroma', sans-serif;
-} 
-    */

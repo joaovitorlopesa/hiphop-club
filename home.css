@@ -14,8 +14,8 @@
 }
 
 .fotos img {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     gap: 50px;
     object-fit: cover;
     border-radius: 15px;
@@ -23,10 +23,5 @@
 }
 
 .fotos img:hover {
-    border: solid #FF6D00;
-    
-}
-
-footer {
-    text-align: center;
+    border: solid #FF6D00;  
 }
