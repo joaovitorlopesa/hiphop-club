@@ -27,3 +27,15 @@ article p {
     margin-top: 100px;
     margin-right: 100px;
 }
+
+.dj-inicial p {
+    justify-self: center;
+    text-align: justify;
+    max-width: 1000px;
+}
+
+.djs article p {
+    justify-self: center;
+    text-align: justify;
+    max-width: 1000px;
+}

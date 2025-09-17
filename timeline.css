@@ -1,0 +1,80 @@
+/* Container principal da seção */
+.timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #FF7900;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+/* Título principal */
+.timeline h2 {
+    text-align: center;
+    color: #3C096C;
+    font-size: 2rem;
+
+}
+
+/* Linha vertical da timeline */
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 40px;
+    top: 100px;
+    bottom: 0;
+    width: 3px;
+}
+
+/* Cada marco histórico */
+.timeline article {
+    position: relative;
+    margin: 30px 0;
+    margin-left: 80px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #7B2CBF;
+    border-radius: 5px;
+}
+
+/* Círculo na linha do tempo */
+.timeline article::before {
+    content: '';
+    position: absolute;
+    left: -64px;
+    top: 20px;
+    width: 15px;
+    height: 15px;
+    background-color: #7B2CBF;
+    border: 3px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #7B2CBF
+}
+
+/* Títulos dos anos */
+.timeline article h3 {
+    color: #7B2CBF;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Texto dos parágrafos */
+.timeline article p {
+    color: #666;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Destaque para nomes dos DJs */
+.timeline article p strong {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Efeito hover simples */
+.timeline article:hover {
+    background-color: #e9f4ff;
+    transition: background-color 0.3s ease;
+}
