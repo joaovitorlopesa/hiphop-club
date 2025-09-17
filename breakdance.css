@@ -1,0 +1,488 @@
+body {
+
+}
+
+main {
+
+}
+
+img {
+    width: 200px;
+    height: auto;
+}
+
+/* Importando fonte urbana do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;700&display=swap');
+
+/* Variáveis CSS para paleta de cores */
+:root {
+  --orange: #FF6B35;
+  --purple: #8B5CF6;
+  --red: #EF4444;
+  --pink: #EC4899;
+  --dark-bg: #1a1a1a;
+  --light-text: #f5f5f5;
+  --gradient-bg: linear-gradient(135deg, var(--orange), var(--red), var(--pink), var(--purple));
+}
+
+/* Estilo da seção timeline */
+#timeline {
+  background: var(--dark-bg);
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  margin: 2rem 0;
+}
+
+/* Efeito de fundo urbano */
+#timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--gradient-bg);
+  opacity: 0.1;
+  z-index: 0;
+}
+
+/* Título da seção */
+#timeline h2 {
+  font-family: 'Orbitron', monospace;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--light-text);
+  text-align: center;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  position: relative;
+  z-index: 2;
+  background: var(--gradient-bg);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 30px rgba(255, 107, 53, 0.5);
+}
+
+/* Container da lista */
+#timeline ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+}
+
+/* Linha vertical central */
+#timeline ul::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--gradient-bg);
+  transform: translateX(-50%);
+  border-radius: 2px;
+  box-shadow: 0 0 20px rgba(255, 107, 53, 0.5);
+}
+
+/* Itens da timeline */
+#timeline li {
+  position: relative;
+  margin: 3rem 0;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  font-family: 'Roboto', sans-serif;
+  color: var(--light-text);
+  line-height: 1.6;
+}
+
+/* Alternância de posição dos itens */
+#timeline li:nth-child(odd) {
+  margin-left: 0;
+  margin-right: 55%;
+  text-align: right;
+}
+
+#timeline li:nth-child(even) {
+  margin-left: 55%;
+  margin-right: 0;
+  text-align: left;
+}
+
+/* Hover effect nos itens */
+#timeline li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Círculos indicadores na linha central */
+#timeline li::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--gradient-bg);
+  transform: translateY(-50%);
+  box-shadow: 0 0 20px rgba(255, 107, 53, 0.7);
+  z-index: 3;
+}
+
+#timeline li:nth-child(odd)::before {
+  right: -65px;
+}
+
+#timeline li:nth-child(even)::before {
+  left: -65px;
+}
+
+/* Estilo das décadas (strong) */
+#timeline li strong {
+  font-family: 'Orbitron', monospace;
+  font-size: 3rem;
+  font-weight: 900;
+  display: block;
+  margin-bottom: 1rem;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Cores específicas para cada década */
+#timeline li:nth-child(1) strong {
+  color: var(--orange);
+  text-shadow: 0 0 20px var(--orange);
+}
+
+#timeline li:nth-child(2) strong {
+  color: var(--red);
+  text-shadow: 0 0 20px var(--red);
+}
+
+#timeline li:nth-child(3) strong {
+  color: var(--pink);
+  text-shadow: 0 0 20px var(--pink);
+}
+
+#timeline li:nth-child(4) strong {
+  color: var(--purple);
+  text-shadow: 0 0 20px var(--purple);
+}
+
+#timeline li:nth-child(5) strong {
+  background: var(--gradient-bg);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 30px rgba(255, 107, 53, 0.5);
+}
+
+/* Números grandes das décadas */
+#timeline li strong::after {
+  content: attr(data-decade);
+  position: absolute;
+  font-size: 8rem;
+  font-weight: 900;
+  opacity: 0.1;
+  z-index: -1;
+  top: -2rem;
+  font-family: 'Orbitron', monospace;
+}
+
+#timeline li:nth-child(odd) strong::after {
+  right: -1rem;
+}
+
+#timeline li:nth-child(even) strong::after {
+  left: -1rem;
+}
+
+/* Texto do conteúdo */
+#timeline li {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+  #timeline {
+    padding: 2rem 1rem;
+  }
+  
+  #timeline h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  #timeline ul::before {
+    left: 30px;
+  }
+  
+  #timeline li {
+    margin-left: 60px !important;
+    margin-right: 0 !important;
+    text-align: left !important;
+    margin: 2rem 0;
+    padding: 1.5rem;
+  }
+  
+  #timeline li::before {
+    left: -50px !important;
+    right: auto !important;
+  }
+  
+  #timeline li strong {
+    font-size: 2rem;
+  }
+  
+  #timeline li strong::after {
+    font-size: 4rem;
+    left: -1rem !important;
+    right: auto !important;
+  }
+}
+
+/* Animações */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#timeline li {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+#timeline li:nth-child(1) { animation-delay: 0.1s; }
+#timeline li:nth-child(2) { animation-delay: 0.2s; }
+#timeline li:nth-child(3) { animation-delay: 0.3s; }
+#timeline li:nth-child(4) { animation-delay: 0.4s; }
+#timeline li:nth-child(5) { animation-delay: 0.5s; }
+
+
+/* Importando fontes modernas */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;700&display=swap');
+
+/* Variáveis CSS para paleta de cores */
+:root {
+  --orange: #FF6B35;
+  --purple: #8B5CF6;
+  --red: #EF4444;
+  --pink: #EC4899;
+  --dark-bg: #1a1a1a;
+  --light-text: #f5f5f5;
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --gradient-bg: linear-gradient(135deg, var(--orange), var(--red), var(--pink), var(--purple));
+}
+
+/* Estilo da seção movimentos */
+#movimentos {
+  background: var(--dark-bg);
+  padding: 4rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Efeito de fundo sutil */
+#movimentos::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--gradient-bg);
+  opacity: 0.05;
+  z-index: 0;
+}
+
+/* Título da seção */
+#movimentos h2 {
+  font-family: 'Orbitron', monospace;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--light-text);
+  text-align: center;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  position: relative;
+  z-index: 2;
+  background: var(--gradient-bg);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 30px rgba(255, 107, 53, 0.5);
+}
+
+/* Container dos artigos */
+#movimentos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Container flexível para os artigos */
+#movimentos > :not(h2) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* Estilo dos artigos individuais */
+#movimentos article {
+  flex: 0 1 250px;
+  background: var(--card-bg);
+  border-radius: 20px;
+  padding: 1.5rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover effect nos artigos */
+#movimentos article:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Cores específicas para cada movimento */
+#movimentos article:nth-child(1):hover {
+  box-shadow: 0 20px 40px rgba(255, 107, 53, 0.3);
+}
+
+#movimentos article:nth-child(2):hover {
+  box-shadow: 0 20px 40px rgba(239, 68, 68, 0.3);
+}
+
+#movimentos article:nth-child(3):hover {
+  box-shadow: 0 20px 40px rgba(236, 72, 153, 0.3);
+}
+
+#movimentos article:nth-child(4):hover {
+  box-shadow: 0 20px 40px rgba(139, 92, 246, 0.3);
+}
+
+/* Estilo das imagens */
+#movimentos article img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+/* Hover effect nas imagens */
+#movimentos article:hover img {
+  transform: scale(1.05);
+}
+
+/* Bordas coloridas nas imagens no hover */
+#movimentos article:nth-child(1):hover img {
+  border-color: var(--orange);
+  box-shadow: 0 0 20px rgba(255, 107, 53, 0.5);
+}
+
+#movimentos article:nth-child(2):hover img {
+  border-color: var(--red);
+  box-shadow: 0 0 20px rgba(239, 68, 68, 0.5);
+}
+
+#movimentos article:nth-child(3):hover img {
+  border-color: var(--pink);
+  box-shadow: 0 0 20px rgba(236, 72, 153, 0.5);
+}
+
+#movimentos article:nth-child(4):hover img {
+  border-color: var(--purple);
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.5);
+}
+
+/* Estilo dos títulos h3 */
+#movimentos article h3 {
+  font-family: 'Orbitron', monospace;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--light-text);
+  margin: 1rem 0 0.5rem 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+/* Estilo das descrições (parágrafos) */
+#movimentos article p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: rgba(245, 245, 245, 0.8);
+  line-height: 1.5;
+  margin: 0;
+  text-align: center;
+}
+
+/* Animações de entrada */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#movimentos article {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+#movimentos article:nth-child(1) { animation-delay: 0.1s; }
+#movimentos article:nth-child(2) { animation-delay: 0.2s; }
+#movimentos article:nth-child(3) { animation-delay: 0.3s; }
+#movimentos article:nth-child(4) { animation-delay: 0.4s; }
+
+/* Efeito de brilho sutil nos cards */
+#movimentos article::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+#movimentos article:hover::before {
+  left: 100%;
+}
