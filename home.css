@@ -1,0 +1,32 @@
+#title {
+    font-family: "Rubik Doodle Shadow", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    color: #FF6D00;
+    text-align: center;
+}
+
+.fotos {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.fotos img {
+    width: 250px;
+    height: 250px;
+    gap: 50px;
+    object-fit: cover;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.fotos img:hover {
+    border: solid #FF6D00;
+    
+}
+
+footer {
+    text-align: center;
+}
