@@ -1,0 +1,25 @@
+    body {
+        display: flex;
+        align-items: center;
+        /* Alinha os itens verticalmente ao centro */
+        gap: 15px;
+        /* Adiciona um espaçamento entre a imagem e o texto */
+    }
+
+    img {
+        /* Não precisa de float aqui */
+        max-width: 100%;
+        /* Garante que a imagem não ultrapasse o contêiner */
+        height: auto;
+        /* Mantém a proporção da imagem */
+        border-radius: 15px;
+        /* Adiciona cantos arredondados */
+        margin-right: 10px;
+        /* Espaçamento entre a imagem e o texto */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        /* Adiciona uma sombra sutil */
+    }
+    .fotos {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
