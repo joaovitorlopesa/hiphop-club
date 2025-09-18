@@ -7,6 +7,10 @@
     text-align: center;
 }
 
+#title img {
+    margin-top: 75px;
+}
+
 .fotos {
     text-align: center;
     margin-top: 20px;
