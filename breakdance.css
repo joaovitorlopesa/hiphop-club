@@ -15,6 +15,11 @@ body{
 
 }
 
+.title {
+  text-align: center;
+  margin-top: 110px;
+}
+
 h1{
     text-align: center;
     font-size: 65px;
@@ -30,17 +35,6 @@ h2{
     font-family: "Rubik Doodle Shadow", system-ui;
     color: #FF6D00;
 }
-
-h3{
-    text-align: center;
-    font-size: 40px;
-    margin-top: 20px;
-    font-family: "Rubik Doodle Shadow", system-ui;
-    color: #FF6D00;
-}
-
-
-
 
 img {
     width: 200px;
@@ -539,4 +533,51 @@ nav first{
     gap: 40px;
     flex-wrap: wrap;
     padding: 20px;
+}
+
+#origem p {
+    justify-self: center;
+    text-align: justify;
+    max-width: 1000px;
+}
+
+#historia p {
+    justify-self: center;
+    text-align: justify;
+    max-width: 1000px;
+}
+
+#como-praticar {
+    justify-self: center;
+    text-align: justify;
+    max-width: 1000px;
+}
+
+#hoje {
+    justify-self: center;
+    text-align: justify;
+    max-width: 1000px;
+}
+
+#recursos {
+    justify-self: center;
+    text-align: justify;
+    max-width: 1000px;
+}
+
+#recursos h3 {
+    justify-self: center;
+    text-align: justify;
+    max-width: 1000px;
+}
+
+#recursos p {
+    justify-self: center;
+    text-align: justify;
+    max-width: 1000px;
+}
+#recursos ul {
+    justify-self: center;
+    text-align: justify;
+    max-width: 1000px;
 }
