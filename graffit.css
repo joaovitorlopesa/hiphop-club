@@ -1,0 +1,241 @@
+/* CSS específico para a página de Graffiti */
+
+/* Reset e configurações básicas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Container principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Seção hero */
+.hero-content {
+    padding: 20px 0;
+}
+
+/* Estilos para títulos */
+.hero-content h1 {
+    color: #ff8c00;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.hero-content h2 {
+    color: #ff8c00;
+    font-size: 1.8em;
+    margin: 30px 0 15px 0;
+    border-bottom: 2px solid #ff8c00;
+    padding-bottom: 5px;
+}
+
+/* Layout para seções com imagem e texto */
+.content-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Container da imagem */
+.image-container {
+    flex: 0 0 280px;
+    min-width: 250px;
+}
+
+/* Estilos para todas as imagens */
+img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    border-radius: 15px;
+    border: 3px solid #ff8c00;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block;
+    margin: 15px 0;
+}
+
+/* Efeito hover nas imagens */
+img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(255, 140, 0, 0.4);
+}
+
+/* Container do texto */
+.text-container {
+    flex: 1;
+    padding-left: 20px;
+}
+
+/* Estilos para parágrafos */
+p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+/* Estilos específicos para o conteúdo existente */
+.hero-content > p:first-of-type {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #ff8c00;
+    text-align: center;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+/* Reorganização do layout para imagens inline */
+.hero-content {
+    display: block;
+}
+
+/* Wrapper para cada seção de conteúdo */
+.section-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    margin: 25px 0;
+    padding: 20px;
+    background-color: #fafafa;
+    border-radius: 10px;
+    border-left: 4px solid #ff8c00;
+}
+
+.section-wrapper img {
+    flex: 0 0 280px;
+    margin: 0;
+}
+
+.section-wrapper .text-content {
+    flex: 1;
+}
+
+/* Estilos para o primeiro parágrafo de cada seção */
+.section-wrapper .text-content p:first-child {
+    margin-top: 0;
+    font-weight: 500;
+}
+
+/* Responsividade para tablets */
+@media (max-width: 768px) {
+    .content-section,
+    .section-wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .image-container,
+    .section-wrapper img {
+        flex: none;
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 20px;
+    }
+    
+    .text-container,
+    .section-wrapper .text-content {
+        padding-left: 0;
+    }
+    
+    .hero-content h1 {
+        font-size: 2em;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.5em;
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .content-section,
+    .section-wrapper {
+        padding: 15px;
+        margin: 15px 0;
+    }
+    
+    .image-container,
+    .section-wrapper img {
+        max-width: 100%;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.8em;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.3em;
+    }
+    
+    p {
+        font-size: 1em;
+    }
+}
+
+/* Estilos para navegação (se existir) */
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.logo {
+    color: #ff8c00;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ff8c00;
+}
+
+/* Ajustes específicos para o conteúdo do graffiti */
+.hero-content > img:first-of-type {
+    display: block;
+    margin: 20px auto;
+    max-width: 500px;
+}
+
+/* Estilo para quebras de linha */
+br {
+    line-height: 2;
+}
+
