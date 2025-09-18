@@ -536,3 +536,11 @@ nav first{
     color: white; /* Ou a cor que preferir */
     margin: 0; /* Remove margens padrão do parágrafo */
 }
+
+.movimento-container {
+  display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
