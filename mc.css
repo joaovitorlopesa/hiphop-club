@@ -1,26 +1,47 @@
-.cabecalho h1 {
-  text-align: center;
-  font-size: 65px;
-  margin-top: 20px;
-  font-family: "Rubik Doodle Shadow", system-ui;
-  color: #FF6D00;
+
+
+.menu a {
+  text-decoration: none; 
+  color: #FFFF; 
+  font-size: 20px; 
+  font-weight: bold; 
+  transition: color 0.3s ease; 
 }
+
+.menu a:hover {
+  color: #007BFF; 
+}
+
+ #cabecalho {
+  margin-top: 90px;
+  text-align: center; 
+}
+
+#cabecalho h1 {
+    color: #f87204ea;
+    text-shadow: 4px 4px 10px rgba(174, 174, 171, 0.874);
+    font-family: 'Bangers', sans-serif;
+    letter-spacing: 7px;
+    
+}
+
 
 figure {
   float: right;
-  margin-left: 20px;
+  margin-left: 20px; 
   margin-bottom: 30px;
-  margin-top: 80px;
+  margin-top: 80px;  
 }
 
 aside {
-  width: 200px;
-  margin-top: 80px;
-  background-color: #f5f0f0;
+  width: 200px; 
+  margin-top: 80px;  
+  background-color: #f5f0f0; 
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(240, 60, 60, 0.692);
-  color: rgba(255, 255, 255, 0.897);
+  box-shadow: 0 4px 6px rgba(240, 60, 60, 0.692); 
+  color: rgba(255, 255, 255, 0.897); 
+  
 }
 
 ol li {
@@ -29,62 +50,88 @@ ol li {
 
 ol li a {
   display: inline-block;
-  text-decoration: none;
-  background-color: #ed9404;
-  color: rgb(1, 0, 0);
+  text-decoration: none; 
+  background-color: #ed9404; 
+  color: rgb(1, 0, 0); 
   padding: 12px 24px;
   font-size: 16px;
   font-weight: bold;
   text-align: center;
   border-radius: 5px;
   width: 100%;
-  box-sizing: border-box;
+  box-sizing: border-box; 
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 ol li a:hover {
-  background-color: #e67e22;
-  transform: scale(1.05);
+  background-color: #e67e22; 
+  transform: scale(1.05); 
 }
 
 
 #inicio {
-  margin-top: -280px;
-  margin-left: 270px;
+  margin-top: -280px;  
+  margin-left: 270px; 
   padding: 0;
 }
 
 
 #origem-historia {
-  margin-top: -400px;
-  margin-left: 40px;
+  margin-top: 100px;
+  margin-left: 40px; 
   padding: 0;
 }
 
 
-figcaption {
+figcaption  {
   color: rgb(238, 255, 7);
   font-style: oblique;
+  margin-left: 30px; 
+  font-size: 15px;
 }
 
 
 #estilo-mc {
-  margin-top: -350px;
-
-
+   margin-top: 100px;
+  margin-left: 40px; 
+  padding: 0;
 }
+    
+
+
 
 #funcao-mc {
-  margin-top: 160px;
+  margin-top: 80px;
+   
+  padding: 0;
+}
+    
+   
 
+
+#curiosidade {
+margin-top: 100px;
+}
+
+#impacto-cultural {
+  margin-top: 300px;
 
 }
+
+#mc-no-brasil {
+  margin-top: 100px;
+  
+}
+
+}
+
 
 ul {
-  list-style-type: none;
-
+    list-style-type: none;
+    
 }
 
-ol {
-  list-style-type: none;
+
+ol{
+    list-style-type: none;
 }
